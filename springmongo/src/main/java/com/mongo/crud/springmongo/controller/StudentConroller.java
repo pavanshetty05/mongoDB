@@ -28,7 +28,7 @@ public class StudentConroller {
 
 	@RequestMapping(value = "/insertuser", consumes = "application/json", method = RequestMethod.POST)
 	public boolean insertUser(@RequestBody Student ostudent) {
-            
+               	System.out.println("Added to check commit");
 		System.out.println(ostudent.toString());
 		repo.insert(ostudent);
 		return true;
